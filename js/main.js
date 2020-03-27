@@ -8,7 +8,7 @@ let setRandomDiceValue = () => {  // Handler
 	// Do the dice roll here
 	 let DiceValue = Math.floor(Math.random() * 6) + 1; 
     // Update HTML content
-    document.querySelector("#diceimg").setAttribute('src', `/img/dice${DiceValue}.svg`);
+    document.querySelector("#diceimg").setAttribute('src', `/dice-roll/img/dice${DiceValue}.svg`);
     document.querySelector("#rolledText").innerHTML = `You rolled ${DiceValue}`;
      // Change the document's title 
     document.title = `Random Dice Roll - ${DiceValue}`; 
